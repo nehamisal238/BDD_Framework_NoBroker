@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="3" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="10" time="104.858">
+    <testcase classname="to feature Blog option" name="to eveluate blog option" time="8.315">
+        <system-out><![CDATA[Given home page is open.....................................................passed
+When click on menu..........................................................passed
+And select Blog option......................................................passed
+Then Blog page is open......................................................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="to feature career page at no broker" name="to validate career page" time="9.14">
+        <system-out><![CDATA[Given user is at home page..................................................passed
+When user click on menu.....................................................passed
+And select career option....................................................passed
+Then career page is open....................................................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="feature the contact us page" name="to validate contactus page" time="11.257">
+        <system-out><![CDATA[Given NOBroker page is open.................................................passed
+When click on menu toggle...................................................passed
+And click on given email Id.................................................passed
+Then contact us page is open................................................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="to feature the login login functionality on NoBroker" name="check login is successful" time="15.16">
+        <system-out><![CDATA[Given user is on NoBroker home page.........................................passed
+And clicks on log in........................................................passed
+When enters mobile number and Enter the password............................passed
+And click on cotinue........................................................passed
+Then user gets logged in Successfully.......................................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="feature to test NoBroker Search functionality" name="Validate NoBroker Search" time="11.262">
+        <system-out><![CDATA[Given browser is open.......................................................passed
+When user enters NoBroker url in search box.................................passed
+And hits enter..............................................................passed
+Then user is navigated to NoBroker home page................................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="to feature painting and cleaning option" name="to validate Painting and Cleaning option" time="12.774">
+        <failure message="chrome not reachable&#10;  (Session info: chrome=102.0.5005.63)&#10;Build info: version: '4.1.4', revision: '535d840ee2'&#10;System info: host: 'MINDC1D160', ip: '172.16.104.16', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.2'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [493944414d5cca737e6df327c97d482b, close {}]&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 102.0.5005.63, chrome: {chromedriverVersion: 102.0.5005.61 (0e59bcc00cc4..., userDataDir: C:\Users\MINDSD~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:51861}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:51861/devtoo..., se:cdpVersion: 102.0.5005.63, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 493944414d5cca737e6df327c97d482b" type="org.openqa.selenium.WebDriverException"><![CDATA[Given end user opens the home page..........................................passed
+When end user click on menu.................................................passed
+And click on Painting & Cleaning............................................passed
+Then select city and page will open.........................................failed
+
+StackTrace:
+org.openqa.selenium.WebDriverException: chrome not reachable
+  (Session info: chrome=102.0.5005.63)
+Build info: version: '4.1.4', revision: '535d840ee2'
+System info: host: 'MINDC1D160', ip: '172.16.104.16', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [493944414d5cca737e6df327c97d482b, close {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 102.0.5005.63, chrome: {chromedriverVersion: 102.0.5005.61 (0e59bcc00cc4..., userDataDir: C:\Users\MINDSD~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:51861}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:51861/devtoo..., se:cdpVersion: 102.0.5005.63, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 493944414d5cca737e6df327c97d482b
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:567)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:622)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:626)
+	at org.openqa.selenium.remote.RemoteWebDriver.close(RemoteWebDriver.java:452)
+	at StepDefination.PaintingCleaning.select_city_and_page_will_open(PaintingCleaning.java:59)
+	at ✽.select city and page will open(file:///C:/Users/mindsdet181/Downloads/BDD_Framework_NoBroker/src/test/resources/Features/PaintingCleaning.feature:7)
+]]></failure>
+    </testcase>
+    <testcase classname="to feature Post property option" name="to validate post property" time="10.622">
+        <system-out><![CDATA[Given main page is open.....................................................passed
+And user clicked on menu option.............................................passed
+When clicked on Post Your Property..........................................passed
+And enter details and enter on start posting your ad for free...............passed
+Then property posted successfully...........................................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="to feature Refer and earn page" name="To validate refer and earn" time="12.327">
+        <system-out><![CDATA[Given opened the home page..................................................passed
+When press click on menu....................................................passed
+And click Refer&Earn........................................................passed
+Then Refer&Earn page is open................................................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="to feature search and rent property" name="to verify the search and rent functionality" time="3.887">
+        <failure message="class org.openqa.selenium.By$ByXPath cannot be cast to class org.openqa.selenium.SearchContext (org.openqa.selenium.By$ByXPath and org.openqa.selenium.SearchContext are in unnamed module of loader 'app')" type="java.lang.ClassCastException"><![CDATA[Given user is on main page..................................................passed
+And user select location and enter the landmark.............................failed
+When select full house......................................................skipped
+And click on search.........................................................skipped
+Then listed properties are visible..........................................skipped
+
+StackTrace:
+java.lang.ClassCastException: class org.openqa.selenium.By$ByXPath cannot be cast to class org.openqa.selenium.SearchContext (org.openqa.selenium.By$ByXPath and org.openqa.selenium.SearchContext are in unnamed module of loader 'app')
+	at StepDefination.RentProperty.user_select_location_and_enter_the_landmark(RentProperty.java:44)
+	at ✽.user select location and enter the landmark(file:///C:/Users/mindsdet181/Downloads/BDD_Framework_NoBroker/src/test/resources/Features/RentProperty.feature:5)
+]]></failure>
+    </testcase>
+    <testcase classname="feature to test sign up functionality" name="check signup is successful" time="9.405">
+        <failure message="Unable to find element with locator By.xpath: //*[@id=&quot;signUp-phoneNumber&quot;]&#10;For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element&#10;Build info: version: '4.1.4', revision: '535d840ee2'&#10;System info: host: 'MINDC1D160', ip: '172.16.104.16', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.2'&#10;Driver info: driver.version: RemoteWebDriver" type="org.openqa.selenium.NoSuchElementException"><![CDATA[Given user is on SignUp page................................................passed
+When user enters the valid data.............................................failed
+And click on continue.......................................................skipped
+Then user signed up sucessfully.............................................skipped
+
+StackTrace:
+org.openqa.selenium.NoSuchElementException: Unable to find element with locator By.xpath: //*[@id="signUp-phoneNumber"]
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.1.4', revision: '535d840ee2'
+System info: host: 'MINDC1D160', ip: '172.16.104.16', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.2'
+Driver info: driver.version: RemoteWebDriver
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:385)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:377)
+	at StepDefination.signup.user_enters_the_valid_data(signup.java:41)
+	at ✽.user enters the valid data(file:///C:/Users/mindsdet181/Downloads/BDD_Framework_NoBroker/src/test/resources/Features/signup.feature:5)
+]]></failure>
+    </testcase>
+</testsuite>
